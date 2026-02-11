@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+    <head>
+	    <title> Projet Génie Logiciel</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="Mini site entièrement en HTML"/>
+        <meta name="author" content="Benkhaled, Iadaden, Achour"/>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/jpg" href="images/imageicone1.jpg"/>
+    </head>
+	<body>
+    	<header>
+        	<figure>
+            	<a href="index.html"><img src="images/logocyu1.webp" alt="logo"/></a>
+            	<figcaption>Logo de l'université de Cergy-Pontoise</figcaption>
+        	</figure>
+        	<div class="titre">
+            	<h1>L'ADN : Acide Désoxyribonucléique </h1>
+        	</div>
+    	</header>
+    	<main>
+    	<nav> 
+        	<ol>
+        		<li><a href="index.html">Accueil</a></li>
+        		<li><a href="membres.html">L'Équipe</a></li>
+    			<li><a href="description.html">Description et périmètres</a></li>
+	    		<li><a href="specifications.html">Spécifications</a></li>
+    			<li><a href="fonctionnalites.html">Fonctionnalités attendues</a></li> 
+    			<li><a href="contraintes.html">Contraintes</a></li>
+    		</ol>
+        </nav>
+    	<article>
+    		<h3>Fonctionnalités attendues du projet:</h3>
+    		<p>L’application propose deux ensembles complémentaires : un module généalogique, centré sur la personnalisation et les calculs génétiques, et un module pédagogique, dédié à la compréhension des mécanismes biologiques. Les fonctionnalités décrites ci-dessous permettent à l’utilisateur de naviguer, saisir ses données, construire son arbre familial et accéder à des contenus éducatifs interactifs.</p>
+    	</article>
+    	<table border="3">
+ 			<tr><td rowspan="2">1. Gestion des comptes utilisateurs</td><td>1.1 Création et connexion</td><td>L’utilisateur peut créer un compte personnel en renseignant ses informations de base (nom, mail, mot de passe). Une fois inscrit, il accède à son espace personnel sécurisé.</td></tr>
+    		<tr><td>1.2 Profil utilisateur</td><td>L’utilisateur complète son profil avec des données générales (âge, sexe, traits connus, antécédents familiaux). Exemple : il indique “yeux marrons”, “antécédent : diabète du père”, cequi servira aux calculs génétiques.</td></tr>
+  			<tr><td rowspan="3">2. Collecte des données génétiques</td><td>2.1 Saisie manuelle</td><td>L’utilisateur peut entrer directement ses caractéristiques (groupe sanguin, traits physiques,maladies héréditaires connues).</td></tr>
+			<tr><td>2.2 Quizz guidés pour l’utilisateur</td><td>Si certaines informations sont inconnues, un quizz progressif permet de les déduire ou d’estimer des probabilités avec bien évidemment une marge d’erreur. Exemple : s’il ne connaît pas son groupe sanguin, le quizz lui demande celui de ses parents pour proposer les groupes possibles .</td></tr>
+			<tr><td>2.3 Quizz pour proches sans compte</td><td>Un quizz estime les traits d’un proche sans compte (ex : yeux, taille, antécédents).</td></tr>
+    		<tr><td rowspan="4">3.Construction et gestion de l’arbre généalogique</td><td>3.1 Ajout de membres</td>
+    		<td>L’utilisateur peut ajouter parents, enfants, partenaires ou autres proches. Exemple : il clique sur “Ajouter un parent”, indique “Cette personne a un compte : oui”, saisit son identifiant, et les données sont importées automatiquement.</td></tr>
+			<tr><td>3.2 Synchronisation avec comptes existants</td><td>Si un proche possède déjà un compte, ses données sont récupérées et mises à jour automatiquement. Exemple : en ajoutant sa sœur, l’arbre affiche directement ses informations génétiques.</td></tr>
+			<tr><td>3.3 Visualisation graphique</td><td>L’arbre est affiché sous forme de schéma interactif (nœuds et liens). L’utilisateur peut zoomer, déplacer la vue et cliquer sur un membre pour afficher ses données. Exemple : en cliquant sur la case de sa mère, une fiche latérale affiche ses traits et antécédents.</td></tr>
+    		<tr><td>3.4 Modification de l’arbre</td><td>L’utilisateur peut corriger un lien, supprimer un membre ou mettre à jour des informations.</td></tr>
+    		<tr><td rowspan="3">4. Calcul des probabilités génétiques</td><td>4.1 Probabilité d’expression d’un trait chez l’utilisateur</td><td>L’application estime la probabilité que l’utilisateur exprime un trait ou soit porteur d’un gène, selon les données familiales. Exemple : si les deux parents sont porteurs d’un gène récessif, l’application affiche : “25 % de risque d’être atteint, 50 % d’être porteur sain”</td></tr>
+			<tr><td>4.2 Probabilité d’expression chez la descendance</td><td>En combinant les données de l’utilisateur et de son partenaire, l’application calcule les probabilités pour leurs futurs enfants. Exemple : deux parents aux yeux marrons mais porteurs de l’allèle bleu → “Probabilité d’un enfant aux yeux bleus : 25 %”.</td></tr>
+			<tr><td>4.3 Visualisation des résultats</td><td>Les résultats sont présentés sous forme de tableaux et schémas simplifiés. Exemple : un tableau 2×2 montre les combinaisons AA, Aa, aA, aa avec leurs pourcentages.</td></tr>
+    		<tr><td rowspan="5">5. Module pédagogique : animations et contenus éducatifs </td><td>5.1 Structure de l’ADN et de l’ARN</td><td>Animations expliquant la double hélice, les bases, la transcription. Exemple : une animation montre l’ADN s’ouvrant et l’ARN se formant par complémentarité</td></tr>
+			<tr><td>5.2 Synthèse des protéines</td><td>Illustration du processus ADN → ARN → protéine et impact des mutations. Exemple : une mutation ponctuelle est simulée et l’utilisateur voit comment un acide aminé change.</td></tr>
+			<tr><td>5.3 Fécondation et développement initial</td><td>Animation de la rencontre des gamètes, formation du zygote, premières divisions cellulaires. Exemple : le zygote se divise en 2, 4, 8 cellules avec explications.</td></tr>
+    		<tr><td>5.4 Mitose, méiose et chromosomes</td><td>Explications visuelles des deux types de division cellulaire et de la notion de génome. Exemple: deux animations parallèles montrent mitose (2 cellules identiques) et méiose (4 gamètes différents).</td>	</tr>
+    		<tr><td>5.5 Mini-quizz pédagogiques</td><td>eChaque module se termine par un quizz simple pour valider la compréhension. Exemple : associer les paires de bases (A–T, C–G) ou répondre à “La méiose produit des gamètes”</td></tr>
+    		<tr><td rowspan="2">6. Aide et accompagnement</td><td>6.1 Guide d’utilisation</td><td>Une section explique les boutons, les champs de saisie, les écrans et les étapes principales.</td></tr>
+			<tr><td>6.2 Interprétation des résultats</td><td>Des explications accompagnent les probabilités pour éviter les mauvaises interprétations. Exemple : “25 % de risque signifie 1 cas sur 4 en moyenne, pas une certitude individuelle”.</td></tr>
+    	</table>
+		</main>
+		<footer>
+        	<div class="footer-nav"> 
+        			<a href="specifications.html" class="btn-nav">Précédent</a> 
+        			<span class="nav-name">Achour & Iadaden & Benkhaled</span> 
+        			<a href="contraintes.html" class="btn-nav">Suivant</a> 
+       		</div>
+    	</footer>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    	
